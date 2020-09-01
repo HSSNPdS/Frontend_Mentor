@@ -20,19 +20,18 @@ button{
 }
 
 body{
-  margin: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 
   background: var(--light-grayish-blue);
 }
 
 .article-image{
   grid-area: logo;
-  width: 350px;
-  height: 350px;
+  width: 250px;
+  height: 250px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -41,10 +40,13 @@ body{
 }
 
 .article-box{
-  max-width: 900px;
+  max-width: 700px;
+  height: 250px;
+  font-size: 13px;
+
   display: grid;
-  grid-template-columns: 350px 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 1fr 0.5fr;
   grid-template-areas: 
     "logo  text"
     "logo profile"
@@ -54,28 +56,37 @@ body{
   background-color: white;
 }
 
+.padding-box{
+  grid-area: text;
+  padding: 20px 30px;
+}
+
 .article-text{
   grid-area: text;
-
-  padding: 10px;
 }
 
 .article-text h1{
-  Font: 700 24px Manrope;
+  Font: 700 20px Manrope;
   color: var(--very-dark-grayish-blue);
+  margin-bottom: 10px;
+}
+
+.article-text p{
+  color: var(--desaturated-dark-blue);
 }
 
 .profile-box{
   grid: profile;
 
   padding: 10px;
+  font-size: 10px;
   
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.profile-box img{
+#avatar{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -90,4 +101,35 @@ body{
 .profile-text{
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+}
+
+.profile-text h2{
+  color: var(--very-dark-grayish-blue);
+}
+
+.profile-text h3{
+  color: var(--grayish-blue);
+}
+
+.share-button{
+  background: var(--light-grayish-blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+.share-button img{
+  width: 15px;
+  height: 15px;
+}
+
+.attribution{
+  transform: translateY(28vh)
 }
