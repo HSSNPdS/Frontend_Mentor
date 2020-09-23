@@ -40,7 +40,7 @@ body{
 }
 
 .article-box{
-  max-width: 700px;
+  max-width: 800px;
   height: 250px;
   font-size: 13px;
 
@@ -99,17 +99,57 @@ body{
 }
 
 .profile-text{
+  overflow-wrap: normal;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
 }
 
 .profile-text h2{
+  width: 150px;
   color: var(--very-dark-grayish-blue);
 }
 
 .profile-text h3{
   color: var(--grayish-blue);
+}
+
+.share-block{
+  display: flex;
+  flex-direction: column;
+}
+
+.share-options.hide{
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+}
+
+.share-options{
+  transition: 400ms;
+  display: flex;
+
+  transform: translate(90px, -50px);
+
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  
+  text-align: center;
+  color: white;
+  font-weight: bold;
+
+  width: 160px;
+  height: 40px;
+  
+  border-radius: 10px;
+  background: var(--very-dark-grayish-blue);
+}
+
+.share-options img{
+  margin-left: 10px;
+  width: 20px;
+  height: 20px;
 }
 
 .share-button{
