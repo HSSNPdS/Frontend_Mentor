@@ -6,4 +6,5 @@ function toggleShareOptions(){
       .querySelector('.share-options')
       .classList.toggle('hide')
   })
+
 }
