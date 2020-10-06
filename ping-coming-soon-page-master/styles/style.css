@@ -1,0 +1,121 @@
+:root{
+  --Primary: hsl(223, 87%, 63%);
+  --PaleBlue: hsl(223, 100%, 88%);
+  --LightRed: hsl(354, 100%, 66%);
+  --White: hsl(0, 0%, 97%);
+  --Gray: hsl(0, 0%, 59%);
+  --VeryDarkBlue: hsl(209, 33%, 12%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+header img{
+  margin: 180px 0 40px 0;
+}
+
+header h1{
+  margin-bottom: 15px;
+  color: var(--Gray);
+
+  font-size: 45px;
+  font-weight: 300;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+header h1 span{
+  color: var(--VeryDarkBlue);
+
+  font-weight: 700;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+header h2{
+  margin-bottom: 30px;
+  color: var(--VeryDarkBlue);
+
+  font-size: 20px;
+  font-weight: 300;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+main input{
+  width: 380px;
+  height: 50px;
+  padding: 0 20px;
+
+  font-size: 15px;
+  color: var(--Gray);
+  
+  border-radius: 25px;
+  border: solid 1px var(--Gray);
+}
+
+.no-outline:focus {
+  outline: none;
+}
+
+main button{
+  margin: 0 0 60px 15px;
+  width: 170px;
+  height: 50px;
+  padding: 6px 30px;
+
+  color: var(--White);
+  font-size: 20px;
+
+  background: var(--Primary);
+  border-radius: 25px;
+  border: none;
+}
+
+main img{
+  margin-bottom: 40px;
+  width: 500px;
+  height: 300px;
+}
+
+footer ul{
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+
+  list-style: none;
+}
+
+.ion-icon {
+  font-size: 64px;
+}
+
+footer p{
+  margin-bottom: 20px;
+  
+  color: var(--Gray);
+  font-size: 16px;
+
+  font-weight: 300;
+  font-family: 'Libre Franklin', sans-serif;
+}
+
+footer ul li img{
+  margin: 5px 10px;
+  width: 30px;
+  height: 30px;
+}
+
+footer ul li img:hover{
+  background-color: var(--VeryDarkBlue);
+  border-radius: 30px;
+  cursor: pointer;
+}
