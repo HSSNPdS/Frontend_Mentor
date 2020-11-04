@@ -22,6 +22,8 @@ body{
 
   background-color: var(--IceWhite);
   text-align: center;
+  font-family: 'Karla', sans-serif;
+  color: var(--LightGray);
 }
 
 .content{
@@ -30,43 +32,86 @@ body{
   justify-content: center;
   align-items: center;
   
-  grid-auto-columns: 300fr 300fr;
-  grid-template-rows: 150px 300px;
+  grid-auto-columns: 325px 325px;
+  grid-template-rows: 140px 300px;
   grid-template-areas: 
   'top top'
   'left right';
 }
 
 .one{
+  text-align: left;
   padding: 30px;
   grid-area: top;
+  border-radius: 10px 10px 0 0;
   background-color: var(--White);
 }
 
+.one #content{
+  max-width: 550px;
+}
+
 .one h1{
+  color: var(--Cyan);
   margin-bottom: 20px;
 }
 
 .one h2{
+  color: var(--BrightYellow);
   margin-bottom: 20px;
 }
 
 .one p{
+  color: var(--GrayishBlue);
   margin-bottom: 20px;
 }
 
 .two{
   padding: 30px;
   grid-area: left;
-  width: 400px;
-  height: 250px;
+  border-bottom-left-radius: 10px;
+  height: 225px;
   background: var(--Cyan);
 }
 
+.two h1{
+  text-align: left;
+}
+
+.two h2{
+  text-align: left;
+}
+
+.two h2 span{
+  text-align: left;
+}
+
+.two p{
+  text-align: left;
+}
+
+.two button{
+  width: 200px;
+  height: 50px;
+  background: var(--BrightYellow);
+}
+
 .three{
+  text-align: left;
   padding: 30px;
   grid-area: right;
-  width: 400px;
-  height: 250px;
+  border-bottom-right-radius: 10px;
+  height: 225px;
   background: var(--CyanLight);
+}
+
+.three h1{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.three ul{
+  font-size: 16px;
+  line-height: 20px;
+  list-style-type: none;
 }
