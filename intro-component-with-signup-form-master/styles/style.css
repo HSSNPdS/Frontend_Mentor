@@ -1,0 +1,46 @@
+:root{
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Blue: hsl(248, 32%, 49%);
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+  --White: hsl(0, 0%, 93%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  background: var(--Red);
+  background-image: url('../images/bg-intro-desktop.png');
+  background-repeat: no-repeat;
+}
+
+body{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content{
+  display: grid;
+  flex-direction: row;
+
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+
+  grid-auto-columns: 600px 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  'text form';
+}
+
+.content .one{
+  grid-area: text;
+  color: var(--White);
+}
