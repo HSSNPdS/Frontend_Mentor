@@ -22,7 +22,7 @@ body{
 }
 
 header img{
-  margin: 180px 0 40px 0;
+  margin: 280px 0 40px 0;
 }
 
 header h1{
@@ -118,4 +118,36 @@ footer ul li img:hover{
   background-color: var(--VeryDarkBlue);
   border-radius: 30px;
   cursor: pointer;
+}
+
+@media(max-width: 900px){
+  main{
+    padding: 0 10%;
+  }
+
+  header img{
+    margin: 380px 0 40px 0;
+  }
+
+  header h1 {
+    font-size: 35px;
+  }
+  
+  header h2{
+    font-size: 20px;
+  }
+  
+  main input{
+    padding: 0px;
+  }
+
+  main button{
+    margin-top: 10px;
+    width: 380px;
+  }
+
+  main img{
+    width: 400px;
+    height: 200px;
+  }
 }
